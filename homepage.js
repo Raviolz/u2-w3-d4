@@ -37,10 +37,14 @@ const getImgs = function (query) {
       //per cambiare immagini e non farlo esplodere se ottengo meno immagini della card o viceversa if
       // se no ciclo tutte ma vado a creare più card di quelle che avevo in partenza e non so se vanno bene
       const images = document.querySelectorAll(".card img");
+      const NumToId = document.querySelectorAll(".card .text-muted");
 
       data.photos.forEach((photo, index) => {
         if (images[index]) {
           images[index].src = photo.src.medium;
+          if (NumToId[index]) {
+            NumToId[index].innerText = `ID: ${photo.id}`;
+          }
         }
       });
       //metto qui cosi son sicura che la pagina ha finito di caricare
@@ -61,3 +65,18 @@ const getImgs = function (query) {
 };
 
 getImgs("whales");
+
+//per search field utente stessa funzione
+
+const searchBtn = document.getElementById("searchBtn");
+const searchField = document.getElementById("searchField");
+
+searchBtn.addEventListener("click", () => {
+  const userQuery = searchField.value;
+
+  if (userQuery !== "") {
+    getImgs(userQuery);
+  } else {
+    alert("Scrivi qualcosa prima di cercare!");
+  }
+});
