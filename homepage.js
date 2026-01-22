@@ -1,10 +1,24 @@
 // my key kHhk981FNHovRzyUCrIrWy82t2J8wPHFpCEmM6yvOxF9WK3XIM3agPgO
 // https://api.pexels.com/v1/search?query=hamsters
 
-const DogUrl = "https://api.pexels.com/v1/search?query=dog";
+// const DogUrl = "https://api.pexels.com/v1/search?query=dog"; alla fine niente per associarlo a più ricerche
+// https://api.pexels.com/v1/search?query=tigers
 
-const getImgs = function () {
-  fetch(DogUrl, {
+const btnPrimary = document.getElementById("Load");
+const btnSecondary = document.getElementById("Load2");
+
+// Per non riscrivere la fetch uso parametro funzione nell event listener del bottone associato
+btnPrimary.addEventListener("click", () => {
+  getImgs("dog");
+});
+
+btnSecondary.addEventListener("click", () => {
+  getImgs("tigers");
+});
+
+const getImgs = function (query) {
+  const url = `https://api.pexels.com/v1/search?query=${query}`;
+  fetch(url, {
     headers: {
       Authorization: "kHhk981FNHovRzyUCrIrWy82t2J8wPHFpCEmM6yvOxF9WK3XIM3agPgO",
     },
@@ -18,7 +32,7 @@ const getImgs = function () {
       }
     })
     .then((data) => {
-      console.log(" CANI RICEVUTI:", data);
+      console.log(" ANIMALI RICEVUTI:", data);
 
       //per cambiare immagini e non farlo esplodere se ottengo meno immagini della card o viceversa if
       // se no ciclo tutte ma vado a creare più card di quelle che avevo in partenza e non so se vanno bene
