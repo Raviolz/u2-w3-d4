@@ -43,13 +43,21 @@ const getImgs = function (query) {
           images[index].src = photo.src.medium;
         }
       });
-    })
+      //metto qui cosi son sicura che la pagina ha finito di caricare
+      const allHideButtons = document.querySelectorAll(".hideBtn");
 
+      allHideButtons.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+          const cardColumn = event.target.closest(".col-md-4");
+          if (cardColumn) {
+            cardColumn.remove();
+          }
+        });
+      });
+    })
     .catch((err) => {
       console.log("ERRORE NELLA FETCH", err);
-      const spinner = document.getElementById("spinner-container");
-      spinner.classList.add("d-none");
     });
 };
 
-getImgs();
+getImgs("whales");
