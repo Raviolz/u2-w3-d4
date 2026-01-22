@@ -1,1 +1,41 @@
 // my key kHhk981FNHovRzyUCrIrWy82t2J8wPHFpCEmM6yvOxF9WK3XIM3agPgO
+// https://api.pexels.com/v1/search?query=hamsters
+
+const DogUrl = "https://api.pexels.com/v1/search?query=dog";
+
+const getImgs = function () {
+  fetch(DogUrl, {
+    headers: {
+      Authorization: "kHhk981FNHovRzyUCrIrWy82t2J8wPHFpCEmM6yvOxF9WK3XIM3agPgO",
+    },
+  })
+    .then((res) => {
+      console.log("RESPONSE", res);
+      if (res.ok) {
+        return res.json();
+      } else {
+        throw new Error("La response ha un problema");
+      }
+    })
+    .then((data) => {
+      console.log(" CANI RICEVUTI:", data);
+
+      //per cambiare immagini e non farlo esplodere se ottengo meno immagini della card o viceversa if
+      // se no ciclo tutte ma vado a creare più card di quelle che avevo in partenza e non so se vanno bene
+      const images = document.querySelectorAll(".card img");
+
+      data.photos.forEach((photo, index) => {
+        if (images[index]) {
+          images[index].src = photo.src.medium;
+        }
+      });
+    })
+
+    .catch((err) => {
+      console.log("ERRORE NELLA FETCH", err);
+      const spinner = document.getElementById("spinner-container");
+      spinner.classList.add("d-none");
+    });
+};
+
+getImgs();

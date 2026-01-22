@@ -1,11 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <title>EPICODE - Pexels API</title>
     <link
@@ -64,6 +61,12 @@
         user-select: none;
       }
 
+      .card-img-top {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -79,10 +82,8 @@
             <div class="col-sm-8 col-md-7 py-4 text-white">
               <h4>About</h4>
               <p class="text-gray">
-                Add some information about the album below, the author, or any
-                other background context. Make it a few sentences long so folks
-                can pick up some informative tidbits. Then, link them off to
-                some social networking sites or contact information.
+                Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some
+                informative tidbits. Then, link them off to some social networking sites or contact information.
               </p>
             </div>
           </div>
@@ -105,9 +106,7 @@
               viewBox="0 0 24 24"
               focusable="false"
             >
-              <path
-                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
-              />
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
               <circle cx="12" cy="13" r="4" />
             </svg>
             <strong>Album</strong>
@@ -130,12 +129,9 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Album API example</h1>
-          <p class="lead text-muted">
-            This page will dynamically load pictures from the web, and display
-            them in a cool way!
-          </p>
+          <p class="lead text-muted">This page will dynamically load pictures from the web, and display them in a cool way!</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Load Images</a>
+            <a href="#" class="btn btn-primary my-2" id="Load">Load Doggos</a>
             <a href="#" class="btn btn-secondary my-2">Load Secondary Images</a>
           </p>
         </div>
@@ -145,33 +141,16 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -180,33 +159,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -215,33 +177,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -250,33 +195,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -285,33 +213,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -320,33 +231,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -355,33 +249,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -390,33 +267,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -425,33 +285,16 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img
-                  src="https://picsum.photos/id/237/300/200"
-                  class="bd-placeholder-img card-img-top"
-                />
+                <img src="https://picsum.photos/id/237/300/200" class="bd-placeholder-img card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -474,5 +317,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./homepage.js"></script>
   </body>
 </html>
